@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+    <style>
+        #displayArea{
+            width: 200px;
+            height: 200px;
+            border: 1px groove #333;
+            overflow: hidden;
+        }
+
+        #displayArea img{
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>자바스크립트 사용 방법</h1>
+    <!--1. 보통 </head> 앞에 작성하거나 </body> 앞에 보통 작성-->
+    <div id="displayArea">
+        
+    </div>
+    <button type="button" id="displayBtn">표시</button>
+
+    <!--2-1. jQuery 공식 사이트 CDN : 개발용(문법 해석용 라이브러리)-->
+    <script src="lib/jquery.min.js"></script>
+    <script src="script/selector.js"></script> <!--chapter 5. section 03. 제이쿼리를 사용한 태그제어-->
+    <script src="script/practice.js"></script>
+    <!-- <script>
+    //     //실행용 코드 : HTML, CSS 조작/제어하거나 이벤트 처리하거나 Ajax 통신하거나..
+    //     $(document).ready(function(){
+    //         //jQuery 시작 코드 [정적인 파일들(HTML, CSS, JS, IMAGE) 로드된 뒤 스크립트 실행]
+    //     });//긴 버전
+
+    //     $(function(){
+    //         //jQuery 시작 코드 [정적인 파일들(HTML, CSS, JS, IMAGE) 로드된 뒤 스크립트 실행]
+    //     });//짧은 버전
+    // </script> -->
+
+
+    <!--2-2. jQuery 공식 사이트 CDN : 배포용-->
+   <!-- <script src="lib/jquery.min.js"></script>
+    비동기 처리 -->
+    
+</body>
+</html>
+
