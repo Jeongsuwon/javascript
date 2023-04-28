@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 복습</title>
+<style>
+    header{
+        height: 80px;
+        background: wheat;
+        font-size: 2.5rem;
+        
+    }
+    
+</style>
+</head>
+<body>
+    <header>
+        <p>4월 26일 jQuery 복습 완료</p>
+    </header>
+    <div class="btns">
+        <button id="b1">#pic 숨기기 </button>
+        <button id="b2">.c1 숨기기</button>
+        <button id="b3">모든 이미지 숨기기</button>
+        <button id="b4">숨기기 취소</button>    
+    </div>  
+    <div class="imgs">
+        <img src="https://picsum.photos/id/1/300" id="img1" alt="picsum photo">
+        <img src="https://picsum.photos/id/2/300" id="img2" alt="picsum photo">
+        <img src="https://picsum.photos/id/3/300" id="img3" alt="picsum photo">
+        <img src="https://picsum.photos/id/4/300" id="img4" alt="picsum photo">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $(function(){
+        $("#b1").on("click", function(){
+            $("#img1").hide();
+        })
+        $("#b2").on("click",function(){
+            $("#img2").hide();
+        })
+        $("#b3").on("click", handle1);
+        $("#b4").on("click", handle2);
+    });
+    function handle1(){
+        $("img").hide();
+    }
+    function handle2(){
+        $("img").show();
+    }
+    </script>
+
+</body>
+</html>
