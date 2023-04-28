@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>남이 만든 jQuery캐러셀 사용하기</title>
     <!-- slick -->
-
-    <link rel="stylesheet" href="css/slick-custom.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   </head>
   <body>
     <h1>그냥 갖다 쓰는 방법!</h1>
@@ -19,9 +18,15 @@
     <h2>어쨋거나 많이 사용하는 slick 캐러셀</h2>
     <!-- 1.slick HTML layout -->
     <div class="your-class">
-      <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
+      <div>
+        <img src="https://picsum.photos/id/1000/1200/300" alt="picsum photos">
+      </div>
+      <div>
+        <img src="https://picsum.photos/id/1001/1200/300" alt="picsum photos">
+      </div>
+      <div>
+        <img src="https://picsum.photos/id/1002/1200/300" alt="picsum photos">
+      </div>
     </div>
     <script
       type="text/javascript"
@@ -31,13 +36,14 @@
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- 배포용 <script type="text/javascript" src="slick/slick.min.js"></script> -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
       $(document).ready(function () {
-        $(".your-class").slick({ //3장씩 움직이는 캐러셀 예제
-          infinite: true,
-          slidesToShow: 3,
-          slidesToScroll: 3,
+        $(".your-class").slick({
+          accessbility: true,
+          autoplay: true,
+          fade: true
         });
       });
     </script>
