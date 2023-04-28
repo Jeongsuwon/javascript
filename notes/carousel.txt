@@ -67,7 +67,7 @@ $("li:nth-child(1)") : css 방식의 선택자
    - 가장 흔함
 
  2. 움직임 없이 제자리에서 크로스(?)되듯이 바뀌는 캐러셀
-   - 샥 바뀌는거
+   - 샥 바뀌는거 (Fade)
 
  3. 특수한 효과 : 
   - 3D , 퍼즐조각이 채워지듯이? 블라인드처럼 나타나거나 사라지는?
@@ -80,8 +80,10 @@ $("li:nth-child(1)") : css 방식의 선택자
 
 - 라이센스를 꼭 확인!!
 
-1) swiper 캐러셀
+1) swiper 캐러셀   -- 11st.co.kr 메인 캐러셀에서 사용! 
 https://swiperjs.com/demos
+※ 순수 Javascript 버전! jQuery 아님~
+
 
 2) slick 캐러셀
 https://kenwheeler.github.io/slick/
@@ -89,10 +91,18 @@ https://kenwheeler.github.io/slick/
 3) bxslider 캐러셀
 https://bxslider.com/
 
+4) Owl Carousel2
+https://owlcarousel2.github.io/OwlCarousel2/
+
 etc. ?? 캐러셀 , ?? 슬라이드, ?? jquery 캐러셀/슬라이드 검색 ==> 겁나 많아서
 알아서 잘 골라서 쓰면 됩니다 :p
 
+※ 시간없고, 프로젝트 규모가 크고 기간이 촉박 ==> 갖다 쓰거나 사다 쓰거나
 
+※ 모든 종류의 캐러셀이 존재하지 않음 ==> 직접 만들어야 할 수 있음
+
+11번가    swiper 사용
+쿠팡은     직접 만들어서 사용 (한것 같음)
 
 
 
