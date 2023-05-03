@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch API</title>
+</head>
+<body>
+    <h1>fetch를 이용한 비동기 통신</h1>
+    <p>jQuery를 사용하지 않거나 Internet Explorer를 고려하지 않아도 되는 상황에서
+        <br>비동기처리
+    <div class="movies">
+        <!--
+        <div class="movie_img">
+
+        </div>
+        <div class="movie_info">
+            <div class="title"></div>
+            <div class="producer"></div>
+            <div class="genres"></div>
+            <div class="open_year"></div>
+            <div class="open_year"></div>
+        </div>
+        -->
+    </div>
+    
+
+
+        <script>//=>: 화살표 함수
+            var apiURL =  "https://yts.mx/api/v2/list_movies.json?limit=50?minimum_rating=7";
+            fetch(apiURL).then(res => res.json()).then(json=>
+            {
+                var movies=json.data.movies;
+                //할일
+                //table row를 만들어서 데이터와 결합하고, 그걸 출력한다던지
+                console.log(movies);
+                //for ~ of문 : array loop
+                for(movie of movies){
+                var p = document.createElement("p"); // p tag를 javascript로 생성
+                p.textContent = movie.title; //$("p").text('영화제목')와 같음
+                var img = document.createElement("img");
+                img.src = movie.small_cover_image;
+                var movieContainer = document.querySelector(".movies");
+                movieContainer.appendChild(p);
+            }
+            });
+        </script>
+    </p>
+</body>
+</html>
