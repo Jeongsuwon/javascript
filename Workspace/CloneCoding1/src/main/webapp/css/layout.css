@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+body{
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+/*
+html{
+	font-size: 16px;
+}
+반응형 시*/
+/* 공통 스타일*/
+
+ul, ol{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a, a:link{
+	text-decoration: none;
+	color: inherit; 
+}
+
+.d-none{
+	display:none;
+}
+
+.call_chatbot{
+	display: none;	
+}
+
+/* header area*/
+.header_wrap{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#gnb{
+	display: flex;
+	gap: 0 1rem; /* row column */
+}
+
+#gnb:hover{
+	color: aqua;
+}
+
+.badge{
+	background-color: red;
+	width: 22%;
+}
+
+.course_start{
+	background-color: red;
+	color: white;
+	padding: 8px;
+	border-radius: 15%;
+	}
+
+/* carousel_wrap */
+.carousel_wrap{
+	background-color: #303956;
+	height: 400px;
+	overflow: hidden;
+}
+
+.carousel{
+	display: flex;
+	max-width: 1200px;
+	justify-content:space-between;
+	align-items: center;
+	height: 400px;
+	margin: 0 auto;
+}
+.prev, .next{
+	background: #fff;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+}
+.prev span, .next span{
+	margin: 2px 0 0 0;
+}
+
+.contents_wrap{
+	width: 1000px; /* max-width를 사용하면 flex랑 같이 쓸 때 생각한 값이 안 나올 수 가 있음 (flex의 특성) */
+	
+}
+
+.conn_left{
+	color: white;
+}
+
+.conn_right{
+	overflow: hidden;
+
+}
+
+.contents{
+	display: flex;
+	justify-content: center; /* 플렉스 아이템의 (플렉스 컨테이너에 대한) 수평 정렬 */
+	gap: 0 5rem;
+	align-items: center; /* 플렉스 아이템의 (플렉스 컨테이너에 대한) 수직 정렬 */
+}
+
+.pager>ul{
+	display: flex;
+	justify-content: center;
+	gap:0.5rem;
+	margin: 1.5rem 0 0 0; /* 상하 1rem, 좌우 0 */
+}
+
+.pager>ul li{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background: white;
+	border-radius: 50% ;
+}
+
+.pager>ul li.active{ /* 현재 보여지는 사진과 일치하는 페이지 기호에 강조효과 */
+	background: gray;
+
+	}
+	
+/* article */
+.article_wrap{
+	max-width: 1200px;
+	margin: 100px auto;
+}
+
+.article_title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	
+}
+
+.article_title::after{
+	content:'';
+	display: block;
+	width: 85%;
+	height: 1px;
+	background-color: gray;
+}
+
+.article_lists{
+	display: flex;
+	gap: 0 2rem;
+	margin: 2rem 0 0 0;
+}	
+
+.article_lists li{
+	border: 1px solid gray;
+	border-radius: .5rem;
+	overflow: hidden;
+}
+
+.li_contents{
+	padding: 0 .5rem; /* 좌우에 1rem 안쪽 여백 */
+}
+
+.li_title{
+	font-size: .875rem;
+}
+
+.li_text{
+	color: gray;
+	font-size: .875rem;
+}
+
+.li_summary{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 1rem 0;
+	font-size: .825rem;
+}
+
+/* footer */
+footer{
+	background-color: #303956;
+	height: 200px;
+	padding: 3rem;
+	color: white;
+}
+
+.footer_wrap{
+	max-width: 1200px;
+	margin: 0 auto;
+	line-height: 1.8; /* 기본 행 여백의 1.3배 */
+	
+}
+
